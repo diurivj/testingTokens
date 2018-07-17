@@ -6,7 +6,6 @@ const expressjwt = require('express-jwt');
 const router     = express.Router();
 require('dotenv').config();
 
-
 const checkAdmin = expressjwt({secret: process.env.TOKEN_SECRET});
 
 router.post('/signup', (req, res, next) => {
